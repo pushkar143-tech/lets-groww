@@ -1,0 +1,52 @@
+{
+  "background_color": "#0a0b10",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Lets Groww",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Lets Groww",
+  "start_url": "/",
+  "theme_color": "#00bcd4",
+  "icons": [
+    {
+      "src": "https://social-media-marketi-8vr9.bolt.host/vite.svg",
+      "type": "image/svg+xml",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://social-media-marketi-8vr9.bolt.host/__bolt/og-image",
+      "type": "image/jpeg",
+      "sizes": "1200x630",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": true,
+      "width": 1200,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://social-media-marketi-8vr9.bolt.host/favicon.ico",
+      "type": "image/x-icon",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "com.letsgroww.app",
+  "description": "Social Media Growth Panel For Instagram,Facebook,Youtube,Telegram, etc."
+}

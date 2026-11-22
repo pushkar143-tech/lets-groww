@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #05060f;
+  color: #e5e7eb;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0b1a;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0891b2, #7e22ce);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #22d3ee, #a855f7);
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-neon-400 to-neon-500 px-6 py-3 text-sm font-semibold text-ink-950 shadow-glow transition-all duration-300 hover:shadow-neon hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition-all duration-300 hover:border-neon-400/50 hover:bg-white/10 hover:-translate-y-0.5;
+  }
+  .btn-grape {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-grape-400 to-grape-600 px-6 py-3 text-sm font-semibold text-white shadow-grape transition-all duration-300 hover:-translate-y-0.5;
+  }
+  .card {
+    @apply rounded-2xl border border-white/10 bg-ink-850/80 backdrop-blur-xl;
+  }
+  .input-field {
+    @apply w-full rounded-xl border border-white/10 bg-ink-900/80 px-4 py-3 text-sm text-white placeholder-white/30 outline-none transition-all duration-200 focus:border-neon-400/60 focus:ring-2 focus:ring-neon-400/20;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium transition-all duration-200;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #67e8f9 0%, #22d3ee 40%, #c084fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass {
+  background: rgba(14, 16, 35, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Confetti celebration animations */
+@keyframes confetti-fall {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--drift, 0), 105vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes confetti-pop {
+  0% { transform: scale(0.85); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes confetti-wiggle {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(-12deg) scale(1.1); }
+  75% { transform: rotate(12deg) scale(1.1); }
+}
+
+@keyframes order-success-pop {
+  0% { transform: scale(0.85) translateY(12px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+@keyframes deposit-step-in {
+  0% { transform: translateY(16px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}

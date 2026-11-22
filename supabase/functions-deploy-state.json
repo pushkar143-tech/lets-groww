@@ -1,0 +1,13 @@
+{
+  "projectId": "72661332",
+  "functions": {
+    "auto-verify-payment": {
+      "hasChanged": false,
+      "hash": "3662b27f41c9eb1be1701b10b611421893cd6550c88a35801572a75b74fae7c0"
+    },
+    "send-email": {
+      "hasChanged": false,
+      "hash": "99d1e9330db37b2c12da6da4bf05753d0ca2262f5e25c8eca7aa97a0ca563709"
+    }
+  }
+}
